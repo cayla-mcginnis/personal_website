@@ -42,7 +42,7 @@
         </li>
         <li class="nav-item current">
           <a href="contact.html" class="nav-link">
-            How To Reach Me
+            Contact
           </a>
         </li>
       </ul>
@@ -54,24 +54,66 @@
       Contact
       <span class="text-secondary">Me</span>
     </h1>
-    <h2 class="sm-heading">
-      This is how you can reach me...
+    <h2 class="sm-heading" id="h2-contact">
+      Drop me a line by filling out the form below.
     </h2>
-    <div class="boxes">
-      <div>
-        <span class="text-secondary">Email: </span> johndoe@test.com
-      </div>
-      <div>
-        <span class="text-secondary">Phone: </span> (555) 555-5555
-      </div>
-      <div>
-        <span class="text-secondary">Address: </span> 50 Main st Boston MA 02101
-      </div>
-    </div>
+    <form name="htmlform" method="post" action="html_form_send.php">
+      <table width="450px">
+      </tr>
+      <tr>
+       <td valign="top">
+        <label for="first_name">First Name *</label>
+       </td>
+       <td valign="top">
+        <input  type="text" name="first_name" maxlength="50" size="50">
+       </td>
+      </tr>
+       
+      <tr>
+       <td valign="top"">
+        <label for="last_name">Last Name *</label>
+       </td>
+       <td valign="top">
+        <input  type="text" name="last_name" maxlength="50" size="50">
+       </td>
+      </tr>
+      <tr>
+       <td valign="top">
+        <label for="email">Email Address *</label>
+       </td>
+       <td valign="top">
+        <input  type="text" name="email" maxlength="84" size="50">
+       </td>
+       
+      </tr>
+      <tr>
+       <td valign="top">
+        <label for="telephone">Phone Number</label>
+       </td>
+       <td valign="top">
+        <input  type="text" name="telephone" maxlength="30" size="50">
+       </td>
+      </tr>
+      <tr>
+       <td valign="top">
+        <label for="comments">Comments *</label>
+       </td>
+       <td valign="top">
+        <textarea  name="comments" maxlength="1000" cols="50" rows="6"></textarea>
+       </td>
+       
+      </tr>
+      <tr>
+       <td colspan="2" style="text-align:center">
+        <input type="submit" value="Submit">   ( <a href="https://www.freecontactform.com/html_form.php">HTML Form</a> )
+       </td>
+      </tr>
+      </table>
+      </form>
   </main>
 
   <footer id="main-footer">
-    Copyright &copy; 2018
+    Copyright &copy; 2020
   </footer>
 
   <script src="js/main.js"></script>
